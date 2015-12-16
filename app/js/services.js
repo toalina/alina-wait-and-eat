@@ -3,7 +3,7 @@
 /* Services */
 
 angular.module('myApp.services', [])
-  .value('FIREBASE_URL', 'https://waitandeat-demo.firebaseio.com/')
+  .value('FIREBASE_URL', 'https://waitandeat-alina.firebaseio.com/')
   .factory('dataService', function($firebase, FIREBASE_URL) {
     var dataRef = new Firebase(FIREBASE_URL);
     var fireData = $firebase(dataRef);
